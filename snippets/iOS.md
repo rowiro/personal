@@ -241,13 +241,13 @@ CGRect labelRect = [testString boundingRectWithSize:maxSize options:NSStringDraw
 CGRect frame = _mainLabel.frame;
 frame.size.height = labelRect.size.height;
 ```
-### how to access uibutton in uitableviewcell
-set uibutton with tag
+### how to access UIButton in UITableViewCell
+set UIButton with tag
 ```objective-c
 UIButton *button2 = (UIButton *)[[cell contentView] viewWithTag:2];
 ```
 
-### how to parse json data without knowing theire keys? 
+### how to parse json data without knowing their keys? 
 ```objective-c
     NSString *prefix=@"http://ec2-54-251-248-32.ap-southeast-1.compute.amazonaws.com/backup/db/samquery1.php?userid=";
     NSInteger uid = 100;     //let's say user id is 111
@@ -333,7 +333,7 @@ self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:26/
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
 ```
-### how to delete a *.plist file programmingly
+### how to delete a *.plist file programmatically
 ```objective-c
 if(![[NSFileManager defaultManager] removeItemAtPath:documentPlistPath error:&error])
     {
