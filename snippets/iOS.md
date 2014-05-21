@@ -859,7 +859,7 @@ step2: add
 ### how to implement long press gesture to re order the tableview items?
 [reference](http://www.raywenderlich.com/63089/cookbook-moving-table-view-cells-with-a-long-press-gesture)
 
-### how to make circular image and add border?
+### Make circular image and/or add border?
 ```objective-c
 //circle
 self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2;
@@ -867,4 +867,19 @@ self.profileImageView.clipsToBounds = YES;
 //border
 self.profileImageView.layer.borderWidth = 3.0f;
 self.profileImageView.layer.borderColor = [UIColor whiteColor].CGColor;
+```
+
+### Change value of segmentedcontrol by swipegesture?
+```objective-c
+NSInteger index = self.segmentedControl.selectedSegmentIndex;
+if ([swipeRecogniser direction] == UISwipeGestureRecognizerDirectionLeft) {
+    --index;
+} else if ([swipeRecogniser direction] == UISwipeGestureRecognizerDirectionRight) {
+    ++index;
+}
+
+if (0 <= index && index < self.segmentedControl.numberOfSegments) {
+    self.segmentedControl.selectedSegmentIndex = index;
+    [self updateSelectedSegmentText];
+}
 ```

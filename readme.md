@@ -1,7 +1,7 @@
 personal
 ========
 
-snippets, scripts, etc
+snippets, scripts, cheatsheets, etc.
 
 
 #### snippets
@@ -10,5 +10,7 @@ snippets, scripts, etc
 ##### [iOS](snippets/iOS.md)
 ##### [css](snippets/css.md)
 
+#### cheatsheets
+=====
 
-
+##### [iOS](cheatsheets/iOS.md)
